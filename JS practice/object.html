@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        //Object consists of the characteristics of an obect,person,etc
+        const person = {
+            Fname: "John",
+            Lname: "Paul",
+            Age: 30,
+            fullname: function(){
+                return this.Fname + " " + " " + this.Lname;
+            },
+            Bestcolor: "Blue",
+            Cars:{//Nested object. Subobjects
+                car1: "BMW",
+                car2: "Toyota",
+                car3: "Ford"
+            }
+        };
+        //delete person.Age (To delete a particular characteristics)
+        document.getElementById("a").innerHTML=
+        person.Fname + " " + (person.Lname).toUpperCase()//to upper case
+         + " is " + person.Age + " Years old" + " and his best color is "
+          + person.Bestcolor  + " with car " + person.Cars.car1 + person.fullname();
+          //JSON.stringify(person); to show all objects and values
+    </script>
+
+    <p id="d"></p>
+    <script>
+        function person(first,last,age,eye){
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+        const MrA = new person("Taiwo","Seun",25,"Blue");
+        document.getElementById("d").innerHTML= "He is " + MrA.age;
+    </script>
+</body>
+</html>

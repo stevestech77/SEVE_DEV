@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const name = "    Stevestech    ";
+        fname = "John";
+        lname = "Doe";
+        let letters = name.at(5);
+        slice = name.slice(2.9);
+        trimmer = name.trim()//.Triim() to remove white spaces
+        padding = name.replaceAll("Steves","Festa");
+        split = name.split("")
+    text = 'Welcome ${fname},${lname}!';
+        //.match("matching text to find")
+        //To find a text, you'll use indexOf("Object")/.search(/Object to search/)
+        document.getElementById("demo").innerHTML=letters+ " " + 
+        slice+" "+ trimmer+" "+padding+" "+split +" "+ text;
+    </script>
+</body>
+</html>

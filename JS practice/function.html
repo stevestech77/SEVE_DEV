@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ans"></p>
+    <script>
+        //FUNCTION THAT MULTIPLIES
+        function myfunction(p1,p2,p3){
+            return p1*p2-p3;
+        }
+        let result = myfunction(4,6,8);
+        document.getElementById("ans").innerHTML=result;
+    </script>
+    
+    <p id="conversion"></p>
+    <script>
+        //Coverting Fahrenheit to celsius
+        function tocelsius(Fahrenheit){
+            return (5/9)*(Fahrenheit-32);
+        }
+        let answer =  tocelsius(45);
+        document.getElementById("conversion").innerHTML=
+        "To Celsius is " + answer;
+    </script>
+</body>
+</html>
