@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <body><!--Action defines where form is tpo be submitted to and 
+    target is to specify whre to show the response of the submitted text or values
+    Method attribute specifies the HTML method to be used. You canuse post or get.
+    other elements such as label and input include select,textarea,button,checkbox,fieldset,legend,datalist,output,
+    option and optgroup-->
+        <form action="form.php" method="post" autocomplete="on" target="_blank">
+            <label for="fname"><b>First Name:</b></label>
+            <input type="text" name="fname" id="fname" value="John"><br><br>
+            <label for="lname"><b>Second Name:</b></label>
+            <input type="text" name="lname" id="lname" value="Ade">
+            <!--THe use or radio-->
+            <p><b>Select your favourite food using radio input type</b></p>
+            <input type="radio" name="food" id="rice" value="rice">
+            <label for="rice">Rice</label><br>
+            <input type="radio" name="food" id="beans" value="beans">
+            <label for="rice">Bean</label><br>
+            <input type="radio" name="food" id="garri" value="garri">
+            <label for="garri">Garri</label>
+            <!--The use of checkboxes-->
+            <p style="font-size: 20px;"><b>The use of checkboxes for examination list of what was done</b></p>
+            <input type="checkbox" name="subject" id="subject" value="Physics">
+            <label for="subject">Physics</label><br>
+            <input type="checkbox" name="subject2" id="subject2" value="Chemistry">
+            <label for="subject2">Chemistry</label><br>
+            <input type="checkbox" name="subject3" id="subject3" value="Biology">
+            <label for="subject3">Biology</label><br><br>
+            <p><b>The use of selection element</b></p>
+            <label for="cars">Choose a car you love to get:</label>
+            <select id="cars" name="cars" size="1" multiple>
+                <option value="Volvo">Volvo</option>
+                <option value="Benz">Benz</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Honda">Honda</option><br>
+                <p><b>The use of textarea element</b></p><br><br>
+                <textarea name="comment" id="comment" cols="30" rows="10">the cat is in the field</textarea>
+            </select><br><br>
+            <button type="submit" onclick="alert('Are you sure you want to sumit? Else, reload')">click</button>
+            <input type="submit" value="submit" onclick="alert('Are ypu sure?')">
+        </form>
+    </body>
+</html>

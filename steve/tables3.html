@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,th,td {/*border: 1px solid black;border-spacing: 15px;*/ width: 30%; border-collapse: collapse; 
+                padding: 10px;}
+            tr {border-bottom: 1px solid #a06e6e;}
+            tr:hover {background-color: chartreuse;}
+           /* th {text-align: left;}
+            tr:nth-child(even) {background-color: rgb(133, 133, 197);}
+            td:nth-child(even),th:nth-child(even) {background-color: rgb(154, 154, 206);}*/
+        </style> <!--Padding could be left,right,top or bottom also space between two border is border spacing-->
+    </head>
+<table> <caption><h2>Student's biodata (Horizontal)</caption></h2></caption>
+    <tr>
+        <th>Firstname</th> 
+        <!--Row span is to cover 2 rows and colspan also for 2 cols-->
+        <td>Adebowale</td>
+        <td>Adekunle</td>
+        <td>Olawole</td>
+    </tr>
+    <tr>
+        <th>Second name</th>
+        <td>Kunle</td>
+        <td>Rasaq</td>
+        <td>Emmanuel</td>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <td>14</td>
+        <td>24</td>
+        <td>16</td>
+    </tr>
+    <tr>
+        <th>Level</th>
+        <td>100L</td>
+        <td>200L</td>
+        <td>400L</td>
+    </tr>
+</table><br><br>
+<table> <caption><h2>Student's biodata (Vertical)</caption></h2></caption>
+    <colgroup><col span="2" style="background-color: rgb(136, 136, 235);">
+        <col span="2" style="background-color: rgb(92, 146, 20);"></colgroup>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        <th>Level</th>
+    </tr>
+    <tr>
+        <td>Adebowale</td>
+        <td>Kunle</td>
+        <td>14</td>
+        <td>100L</td>
+        
+    </tr>
+    <tr>
+        <td>Adekunle</td>
+        <td>Rasaq</td>
+        <td>24</td>
+        <td>200L</td>
+    </tr>
+    <tr>
+        <td>Olawole</td>
+        <td>Emmanuel</td>
+        <td>16</td>
+        <td>400L</td>
+    </tr>
+</table>
+
+</html>

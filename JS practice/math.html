@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATH</title>
+</head>
+<body>
+    <p id="demo"></p>
+    
+    <script>
+        document.getElementById("demo").innerHTML = 
+        //Math.PI,Math.pow(2,6);
+        //Math.abs();
+        //Math.max();
+        //Math.sin(60*Math.PI/180);
+        //Math.min(-8, 150, 30, 40, 20);
+        //Math.random();
+        //Math.log2(8);
+        Math.floor(Math.random()*100) //For getting a random whole number
+    </script>
+    
+    <button onclick="document.getElementById('dem').innerHTML = 
+    getRndInteger(0,10)">Click Me</button>
+    <p id="dem"></p> 
+    <script>
+        function getRndInteger(min,max) {
+            return Math.floor(Math.random()*(max -min))+min;
+        }
+    </script>
+</body>
+</html>

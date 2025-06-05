@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head><!--When you wamt to get your veerticaldesign, you make sure you use td and th nth-child
+    and for horizontal ones you use the tr nth-child only-->
+        <style>
+            table,th,td {border: 1px solid black;border-spacing: 15px; width: 50%; border-collapse: none; 
+                padding: 10px;}
+            th {text-align: left;}
+            td:nth-child(odd),th:nth-child(even) {background-color: rgb(154, 154, 206);}
+        </style> <!--Padding could be left,right,top or bottom also space between two border is border spacing-->
+    </head>
+<table> <caption><h2>Student's biodata (Horizontal)</caption></h2></caption>
+    <tr>
+        <th rowspan="2">First and second name</th> 
+        <!--Row span is to cover 2 rows and colspan also for 2 cols-->
+        <td>Adebowale</td>
+        <td>Adekunle</td>
+        <td>Olawole</td>
+    </tr>
+    <tr>
+        <td>Kunle</td>
+        <td>Rasaq</td>
+        <td>Emmanuel</td>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <td>14</td>
+        <td>24</td>
+        <td>16</td>
+    </tr>
+    <tr>
+        <th>Level</th>
+        <td>100L</td>
+        <td>200L</td>
+        <td>400L</td>
+    </tr>
+</table><br><br>
+<table> <caption><h2>Student's biodata (Vertical)</caption></h2></caption>
+    <tr>
+        <th colspan="2">Firstname and lastname</th>
+        <th>Age</th>
+        <th>Level</th>
+    </tr>
+    <tr>
+        <td>Adebowale</td>
+        <td>Kunle</td>
+        <td>14</td>
+        <td>100L</td>
+        
+    </tr>
+    <tr>
+        <td>Adekunle</td>
+        <td>Rasaq</td>
+        <td>24</td>
+        <td>200L</td>
+    </tr>
+    <tr>
+        <td>Olawole</td>
+        <td>Emmanuel</td>
+        <td>16</td>
+        <td>400L</td>
+    </tr>
+</table>
+
+</html>

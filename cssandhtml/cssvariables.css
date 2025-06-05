@@ -1,0 +1,38 @@
+/*This allows you tp use a general 
+preferred term or color for others to follow*/
+:root{
+    --pColor:rgb(68, 0, 255);
+    --Scolor:green;
+    --mainTransition: all 2s linear;
+    --mainSpacing: 5px;
+    --text: 70px;
+}
+h1{
+    text-shadow: 10px 10px 10px 10px rgb(255, 0, 0);
+}
+h2{
+    color: var(--primarColor);
+}
+h3{
+    text-align: var();
+    color: var(--pColor);
+    transition: var(--mainTransition);
+    font-size: var(--text);
+}
+h4{
+    text-shadow: 0px 6px 0px rgb(255, 0, 0);
+}
+p{
+    letter-spacing: var(--mainSpacing);
+}
+h3:hover{
+    letter-spacing: var(--mainSpacing);
+    text-shadow: 20px green;
+}
+.main{
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    background: red;
+    box-shadow: 20px 20px 20px 20px yellow;
+}

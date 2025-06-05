@@ -1,0 +1,38 @@
+.box1{
+    background: rgb(186, 190, 178);
+    text-align: center;
+    width: 300px;
+    margin:3rem;
+    padding: 20px;
+    border-radius: 10px;
+    outline-offset: 2px;
+    outline: 2px solid black;
+}
+.box2{
+    background: rgb(186, 190, 178);
+    text-align: center;
+    width: 300px;
+    margin:3rem;
+    padding: 20px;
+    border-radius: 10px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    background: red;
+    border-radius: 50%;
+    margin-left: 45%;
+}
+.icon2{
+    width: 40px;
+    height: 40px;
+    background: rgb(114, 63, 215);
+    border-radius: 50%;
+    margin-left: 45%;
+}
+.button{
+    background-color: red;
+}
+.button2{
+    background-color:rgb(114, 63, 215);
+}

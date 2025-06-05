@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <body><!--Youcan also do for url,time,search and tel with the type=" "-->
+        <!--You ccan also use formenctypein the submit for multipart/form-data -->
+        <!--For validate and not formnonvalidate-->
+        <form action="form.php" autocomplete="on" novalidate>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" required><br><br>
+            <label for="wname">Wild Name</label>
+            <input type="text" name="wname" id="wname" value="Ade Johnson" readonly><br><br>
+            <label for="pword">Password(You can't input more than four)</label>
+            <input type="password" name="pword" id="pword" maxlength="4"><br><br>
+            <label for="fword">FPassword::</label>
+            <input type="password" name="fword" id="fword" value="Intheair" disabled><br><br>
+            <label for="color">Favourite color</label>
+            <input type="color" name="color" id="color" value="#ff0000"><br><br>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" value="12/12/2023" autofocus><br><br>
+            <label for="datetimelocal">Birthday</label>
+            <input type="datetime-local" name="datetimelocal" id="datetimelocal"><br><br>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email"><br><br>
+            <label for="file">Enter your  file</label>
+            <input type="file" name="file" id="file" multiple><br><br>
+            <input type="hidden" name="hidden" id="hidden" value="present">
+            <label for="btm">Month of birth</label>
+            <input type="month" name="btm" id="btm"><br><br>
+            <label for="num">Number</label>
+            <input type="number" name="number" id="number" min="3" max="8"><br><br>
+            <label for="range">Range</label>
+            <input type="range" name="range" id="range" min="0" max="100" ><br><br>
+            Using image as submit button
+            <input type="image" src="log.jpg" height="25px" width="25px" alt="submit">
+            <input type="reset" name="reset" value="Reset">
+            <input type="submit" name="Submit" value="Submit" onclick="alert('Are you sure you want to submit?')">
+        </form>
+    </body>
+</html>

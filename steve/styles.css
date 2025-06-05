@@ -1,0 +1,6 @@
+/*definig the heading*/
+h1 {color: blue;font-size: 200%;text-align: center;}
+h2 {border: 2px solid rgb(255, 0, 0);padding: 20px;}
+h3 {margin: 50px;}
+p  {font-size: 100%;font-style: oblique;}
+body {background-color: rgb(150, 90, 48);}  

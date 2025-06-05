@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <body><!--Action defines where form is tpo be submitted to and 
+    target is to specify whre to show the response of the submitted text or values
+    Method attribute specifies the HTML method to be used. You canuse post or get-->
+    <h3>1</h3>
+        <form action="form.php" autocomplete="off">
+            <label for="name">Name(Surname first then other names)</label>
+            <input type="text" name="name" id="name"><br>
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email">
+            <input type="submit" name="submit">
+            <input type="reset" name="Reset ">
+        </form>
+        <hr>
+        <h3>2</h3>
+<!--The us eof fieldset and legend-->
+        <form action="form.php" autocomplete="on">
+            <fieldset>
+                <legend>Aderibigbe free Jamb form</legend>
+                <label for="firname">First name</label>
+                <input name="firname" id="firname" type="text" value="First name"><br><br>
+                <label for="sename">Second name</label>
+                <input name="sename" id="sename" type="text" value="Second name">
+            </fieldset>
+        </form>
+        <hr><!--To make a restricted input-->
+        <h3>3</h3>
+        <form action="form.php">
+            <input list="browsers" name="browsers">
+            <datalist id="browsers">
+                <option value="Chrome">Chrome</option>
+                <option value="Safari">Safari</option>
+                <option value="Firefox">Firefox</option>
+            </datalist>
+            <input type="submit" name="submit">
+        </form>
+        <hr>
+        <!--Number addition-->
+        <h3>4</h3>
+        <form action="form.php" oninput="x.value=parseInt(a.value)*parseInt(b.value)">
+            0
+            <input type="range" id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output><br><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+a:link,a:visited  {
+    background-color: #ff0000;
+    color: white;
+    padding: 15PX 25PX;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;}
+/*a:visited {color: rgb(255, 0, 0);background-color: transparent;text-decoration: none;}*/
+
+a:hover,a:active {color: rgb(0, 0, 0);}
+/*a:active {color: rgb(202, 167, 26);background-color: transparent;text-decoration: underline;}*/

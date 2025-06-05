@@ -1,0 +1,25 @@
+
+.two{
+    text-align: center;
+    margin: 0;
+    line-height: 0.1;
+}
+.three{
+    line-height: 0.2;
+    background: rgb(4, 4, 201);
+    width: 5rem;
+    height: 0.25rem;
+    margin: 0 auto;
+    margin-bottom: 0 auto;
+    margin-top: 0px;
+}
+.four{
+    width: 90vh;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+.img{
+    background: url("d.jpg");
+    width: 500px;
+    height: 500px
+}

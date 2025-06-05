@@ -1,0 +1,127 @@
+:root{
+    --mainccolor:red;
+    --altcolor: green;
+    --font:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("backgroundweb.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    text-align: center;
+    position: relative;
+}
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+a{
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: red;
+    outline: 0.2rem solid rgb(255, 0, 0);
+    /*outline-width: 0.2rem;
+    outline-color: black;
+    outline-style: solid;*/ 
+    outline-offset: 5px;
+}
+.explore:hover{
+    outline-color: brown;
+    background-color: brown;
+    transform: translateY(10px);
+    transition-duration: 0.5s;
+}
+.ban1{
+    font-size: 47px;
+    animation: ban 5s;
+    font-family: var(--font);
+}
+@keyframes ban{
+    0%{
+        transform: translateX(1000px);
+    }
+    50%{
+        transform: translateX(-200px);
+    }
+}
+.ban2{
+    animation: bann 5s;
+}
+@keyframes bann{
+    0%{
+        transform: translateX(-1000px);
+    }
+    50%{
+        transform: translateX(200px);
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.techstore,
+.section2,
+.section3,
+.section4{
+    background-color: rgb(215, 215, 241);
+    text-align: center;
+    font-size: 20px;
+}
+.techstore:hover,
+.section2:hover,
+.section3:hover,
+.section4:hover{
+    transform: translateY(5px);
+    transition-duration: 0.5s;
+    background-color:rgba(242, 234, 234, 0.5) ;
+    box-shadow: 0px 2px black;
+}
+.techstore p,
+.section2 p,
+.section3 p,
+.section4 p{
+    font-size: 18px;
+}
+@media screen and (min-width: 576px) {
+    .techstore,
+    .section2,
+    .section3,
+    .section4{
+        float: left;
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .techstore,
+    .section2,
+    .section3,
+    .section4{
+        float: left;
+        width: 25%;
+    }
+}
+/*End of the menus*/
+.pi1{
+    width: 500px;
+    height: 350px;
+    border: 5px solid black;
+}
+.abt_our_p{
+    margin: auto 0;
+    padding: 30px;
+}
+.pic1{
+    width: 500px;
+    height: 350px;
+    overflow: hidden;
+}
+.pi1:hover .pic1{
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+    opacity: 0.5;
+}

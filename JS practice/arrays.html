@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="dem"></p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="de"></p>
+    <p id="d"></p>
+    <script>
+        const fruits = ["Apple","Banana","Cherry","Mango","Grape"];
+        size = fruits.length;
+        fruit = fruits.join("++++++")
+        //.pop() means to remove  .push("") To add  .shift() Removes the first
+        //unshift() to add to the beginning  .concat() Adding 2 arrays
+        let text = "<ul>";
+        for (let i = 0; i < size; i++) {
+            text += "<li>" + fruits[i] + "</li>";
+        }
+        text += "</ul>";
+        document.getElementById("demo").innerHTML=size;
+        document.getElementById("dem").innerHTML= text;
+        document.getElementById("de").innerHTML= fruits;
+
+        function myFunction() {
+            fruits.push("Pawpaw");
+
+            document.getElementById("de").innerHTML=fruits
+        }
+        document.getElementById("d").innerHTML=fruit
+    </script>
+</body>
+</html>

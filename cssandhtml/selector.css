@@ -1,0 +1,23 @@
+.hov:hover{
+    color: green;
+}
+.hover:hover{
+    font-size: 20px;
+}
+a:hover{
+    background-color: rgb(229, 229, 241);
+}
+a{
+    display: block;
+    background-color: red;
+    margin: 10px;
+}
+a:link{
+    background: rgb(153, 255, 0);
+}
+a:visited{
+    background: black;
+}
+a:active{
+    background-color: brown;
+}

@@ -1,0 +1,32 @@
+div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+div:hover{
+    background: black;
+}
+.one{
+    background: rgb(12, 83, 53);
+    transform: translateX(50%);
+    transform: skewY(40deg);
+}
+.two{
+    background: green;
+    transform: rotate(45deg);
+}
+.three{
+    background: blue;
+    transform: translate(20px,50px);/*To move to the
+    written coordinates*/
+    transform: scaleX(1.2);/*To increase 
+    size of element*/
+    transition-property: background,border-radius;
+    transition-duration: 4s,4s;
+    transition-delay: 4s;
+}
+.three:hover{
+    border-radius: 50%;
+}
+/*We have transition all, and also,
+transition:background 2s(transition time) 2s(delay time)*/

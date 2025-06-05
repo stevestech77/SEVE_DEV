@@ -1,0 +1,60 @@
+.img1{
+    width: 200px;
+    height: 200px;
+}
+.copyright{
+    text-align: center;
+}
+.table1{
+    border: 2px solid black;
+    border-spacing: 25px;
+}
+.outer{
+    border-style: dashed;
+    border-width: 20px;
+    border-color: yellow;
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+}
+.inner{
+    width: 50%;
+    height: 75%;
+    background-color: red;
+    border-bottom-style: dotted;
+    border-bottom-color: green;
+    border-bottom-width: 20px;
+    border-radius: 50%;
+}
+.classone,.classtwo{
+    margin: 3rem auto;
+    color: blue;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 70vw;
+    text-align: center;
+    background-color: rgb(226, 226, 236);
+}
+.logo{
+    height: 90px;
+    width: 90px;
+}
+.link{
+    background-color: red;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+}
+.menu{
+    list-style-type: none;
+    display: block;
+}
+.menu li a{
+    color: red;
+    background-color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+    display: block;
+    margin: 10px 10px;
+    height: 40px;
+}

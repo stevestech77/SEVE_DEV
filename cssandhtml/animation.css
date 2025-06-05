@@ -1,0 +1,45 @@
+.an{
+    height: 60px;
+    width: 60px;
+    background: rgb(0, 0, 0);
+    animation-name: move;
+    animation-duration: 10s;
+    animation: move 9s 0.1s;
+    animation-fill-mode: forwards;
+    border-radius: 30px;
+}
+@keyframes move{
+    0%{
+        background: black;
+    }
+    10%{
+        background: rgb(255, 255, 255);
+    }
+    20%{
+        background: rgb(0, 0, 0);
+    }
+    30%{
+        background: rgb(255, 255, 255);
+    }
+    40%{
+        background: rgb(0, 0, 0);
+    }
+    50%{
+        background: rgb(255, 255, 255);
+    }
+    60%{
+        background: rgb(0, 0, 0);}
+   
+    70%{
+        background: rgb(255, 255, 255);
+    }
+    80%{
+        background: black;
+    }
+    90%{
+        background: rgb(255, 255, 255);
+    }
+    100%{
+        background: black;
+    } 
+}

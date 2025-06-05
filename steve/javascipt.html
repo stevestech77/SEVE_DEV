@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Some Javascript codes</h2>
+        <p id="demo"></p>
+        <!--The way javascript codes are written-->
+        <script>document.getElementById("demo").innerHTML = "Hello Java" </script>
+        <!--The use of Javascript for content change-->
+        <button type="button" onclick="myFunction()">Click me!</button>
+        <p id="dem">Javascript element change</p>
+        <script> function myFunction() {
+            document.getElementById("dem").style.fontSize = "25px";
+            document.getElementById("dem").style.color = "red";
+            document.getElementById("dem").style.backgroundColor = "pink";
+        } </script>
+        <h2>A bulb switch code</h2>
+        <script> function light(sw) {
+            var pic;
+            if (sw==0) {
+                pic = "p.jpg"
+            } else {
+                pic = "log.jpg"
+            } document.getElementById('image').src = pic;
+        }
+        </script>
+
+        <img id="image" src="p.jpg" height="200" width="200">
+        <p>
+            <button type="button" onclick="light(1)">light on</button>
+            <button type="button" onclick="light(0)">light off</button>
+        </p>
+        <!--For a language that doesn't support javascript, you can use no script-->
+        <noscript>Hello you are not compatibe for the code </noscript>
+    </body>
+</html>

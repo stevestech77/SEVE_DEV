@@ -1,0 +1,27 @@
+
+:root {
+    --primarycolor: red;
+    --cl-secondary: green;
+    --mainTransition: all 2s linear;
+    --mainSpacing: 5px;
+}
+h1 {
+    color: var(--primarycolor);
+}
+h2 {
+    color: var(--primarycolor);
+}
+h3 {
+    color: var(--primarycolor);
+    transition: var(--mainTransition);
+}
+p {
+    transition: var(--mainTransition);
+    letter-spacing: var(--mainSpacing);
+}
+h3:hover {
+    color: var(--cl-secondary);
+}
+p:hover {
+    color: var(--cl-secondary);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .dat  {background-color: green;width: 20%;padding: 10px;}
+        .note {font-size: 120%;color: red;}
+        </style>
+    </head>
+    <body>
+
+        <button onclick="myfunction()">Change elements</button>
+
+        <h1 id="Head">My <span class="note">Important</span> heading</h1>
+        <p>This is some <span class="note">Important</span> text</p>
+        <h1 class="dat"> The man is around</h1>
+        <p>The man is an American thst eats alot</p>
+        <h1 class="dat">London</h1>
+        <p>London is in America</p>
+
+        <script>
+            function displayResult() {
+                document.getElementById("Head").innerHTML = "A masculine Gender!";
+            }
+        </script>
+        <!--<script> function myFunction() {var x = document.getElementsByClassName("note");
+    for (var i= 0; i < x.lenght; i++) {
+        x[i].style.display = "none";
+    }
+    } </script>-->
+    </body>
+</html>

@@ -1,0 +1,37 @@
+div{
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    text-transform: uppercase ;
+}
+.one{
+    background: blue;
+    
+}
+.two{
+    /*;
+    
+    background-repeat: round;
+    background-size: cover;
+    background-size: contain;
+    background-position: 10% 70%;*/
+    background: url('d.jpg');
+    background-repeat: none;
+    background-attachment: fixed;
+}
+.three{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('d.jpg');
+}
+.four{
+    background: linear-gradient(blue,green,red,pink,white,black);
+}
+.five{
+    background: linear-gradient(270deg,black,blue);
+}
+.six{
+    background: linear-gradient(blue 20%,green 70%);
+}

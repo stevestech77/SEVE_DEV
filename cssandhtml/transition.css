@@ -1,0 +1,89 @@
+/*div{
+    width: 14vw;
+    height: 14vw;
+    background: blue;
+    font-size: 30px;
+    color: white;
+    margin: 5px;
+    transition: all 1s linear;
+    float: left;
+}
+div:hover{
+    transform: translateY(100px);
+}
+.ease{
+    transition-timing-function: ease;
+}
+.linear{
+    transition-timing-function: linear;
+}
+.ease-in{
+    transition-timing-function: ease-in;
+}
+.ease-out{
+    transition-timing-function: ease-out;
+}
+.ease-in-out{
+    transition-timing-function: ease-in-out;
+}*/
+div{
+    width: 200px;
+    height: 100px;
+    color: white;
+    margin: 10px;
+}
+/*.transition{
+    background: red;
+    transition: all 2s linear;
+}*/
+/*.transition:hover{
+    background: yellow;
+    transform: translateX(100px);
+}*/
+.animation{
+    background: blue;
+    /*animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;*/
+    animation: move 5s 2;
+    animation-fill-mode: backwards   ;
+}
+/*
+
+@keyframes move{
+    0%{
+        transform: translateX(20px);
+    }
+    50%{
+        transform: translateX(100px);
+        background: red;
+    }
+    75%{
+        transform: translateX(-200px);
+        background: yellow;
+    }
+    100%{
+        transform: translateX(20px);
+        background: green;
+    }
+}*/
+@keyframes move{
+    0%{
+        opacity: 0.1;
+    }
+    25%{
+        transform: translateX(200px);
+        opacity: 0.25;;
+    }
+    50%{
+        transform: translateX(-100px);
+        opacity: 0.5;
+    }
+    75%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(20px);
+        opacity: 1;
+    }
+}
