@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okula- Webflow Ecommerce website Template</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="one">
+            <img src="OKULA.png" alt="">
+        </div>
+        <div class="two space">
+            <a href="##">About Us</a>
+        </div>
+        <div class="Three space">
+            <a href="###">Services</a>
+            </div>
+        <div class="Four space">
+            <a href="####">Portfolio</a>
+        </div>
+        <div class="Five space">
+            <a href="##">Article</a>
+        </div>
+        <div class="six space">
+            <a href="##">Shop</a>
+         </div>
+        <div class="sevena">
+            <a class="seven" href="######"><img src="gift-box.png" alt=""></a>
+            <a class="eightb" href="##"><img src="menu-icon-19337-1.png" id="toggle-button" alt=""></a>
+            <a class="eight" href="">Get in Touch</a>
+        </div>
+    </header>
+    <div class="small_screen" id="links">
+        <a href="##">About Us</a><br>
+        <a href="###">Services</a><br>
+        <a href="####">Portfolio</a><br>
+        <a href="##">Article</a><br>
+        <a href="##">Shop</a>
+    </div>
+    <script>
+        const toggleButton = document.getElementById("toggle-button");
+        const links = document.getElementById("links");
+        let isOpen = false;
+
+        toggleButton.addEventListener("click", function(){
+            if (!isOpen) {
+                links.style.display = "block";
+                toggleButton.src="close-icon-13612.png";//change to secod image
+                isOpen = true;
+            }
+            else {
+                links.style.display = "none";
+                toggleButton.src="menu-icon-19337-1.png";
+                isOpen = false;//change to original image
+            }
+        })
+    </script>
+    <div class="body1">
+        <p class="p1">Innovative Design - Building <br> Dreams, Crafting
+            Spaces
+        </p>
+        <img class="img1" src="avaters.webp" alt="">
+        <p><span class="txt1">2k+</span> 
+            <span class="txt2">Satisfied Clients</span>
+        </p>
+        <p class="txt3">At OKULA, we provide a 
+            comprehensive range of 
+            architectural and design
+             services tailored to meet the unique
+              needs and visions of our clients. 
+              From initial concept to final execution,
+               our dedicated team of professionals 
+               ensures exceptional results that
+             exceed expectations.</p>
+    </div>
+</body>
+</html>

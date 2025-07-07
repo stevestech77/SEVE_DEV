@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        //let a,b,c;
+        //name = "Adeogo";
+        //a = 7;b = 8;c = a+b;
+        //let username = prompt("What is your name");
+        //alert("Hello,"+ username +"! Welcome to ENT302 class");
+        //document.getElementById('demo').innerHTML=name;
+        let num1 = parseFloat(prompt("Enter first number:"));
+        let num2 = parseFloat(prompt("Enter second number:"));
+        let operation = prompt("Enter Operation(+,-,*,/):");
+
+        let result;
+        if (operation === "+") result = num1 +num2;
+        else if (operation === "-") result = num1 - num2;
+        else if (operation === "*") result = num1 * num2;
+        else if (operation === "/") result = num1 / num2;
+        else result = "Invalid Operation";
+        console.log(result);
+    </script>
+</body>
+</html>

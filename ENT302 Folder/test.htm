@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI - checker </title>
+</head>
+<body>
+
+    <script>
+        let weight = parseFloat(prompt("Enter your weight in kg: "));
+        let height = parseFloat(prompt("Enter your height in meters: "));
+
+        let bmi = weight / (height * height);
+
+        alert('Your BMI is: ' + bmi);
+
+        if (bmi < 18.5) {
+            alert("You're underweight. ");
+        }
+        else if (bmi < 24.9) {
+            alert("You have a healthy weight. ");
+        }
+        else if (bmi < 29.9) {
+            alert("You're overweight. ");
+        }
+        else {
+            alert("You’re obese")
+        }
+
+    </script>
+    
+</body>
+</html>

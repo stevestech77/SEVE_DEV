@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="check.css">
+</head>
+<body>
+    <img src="menu-icon-19337-1.png" id="toggle-button">
+    <div id="links" style="display: none;">
+        <a href="##">LinkA</a><br>
+        <a href="##">LinkB</a>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById("toggle-button");
+        const links = document.getElementById("links");
+        let isOpen = false;
+
+        toggleButton.addEventListener("click", function(){
+            if (!isOpen) {
+                links.style.display = "block";
+                toggleButton.src="close-icon-13612.png";//change to secod image
+                isOpen = true;
+            }
+            else {
+                links.style.display = "none";
+                toggleButton.src="menu-icon-19337-1.png";
+                isOpen = false;//change to original image
+            }
+        })
+    </script>
+</body>
+</html>

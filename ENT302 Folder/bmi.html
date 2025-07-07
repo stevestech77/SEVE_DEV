@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.jpg" alt="">
+        <a href="ENTPROJECT1.html">Home</a>
+        <a href="techarchive.html">Tech Archive</a>
+        <a href="calc.html">Calculate</a>
+        <a href="bmi.html">Check BMI</a>
+    </div>
+    <div class="bmi">
+    <h1>BMI Calculator</h1>
+    <input type="number" id="weight" placeholder="Weight (kg)" />
+    <br>
+    <input type="number" id="height" placeholder="Height (m): " />
+    <br><br>
+    <button id="calculate">Calculate BMI</button>
+    <br><br>
+    <button id="result"></button></div>
+</body>
+</html>
+<script>
+    document.getElementById('calculate').addEventListener('click', function() {
+    let weight = parseFloat(document.getElementById('weight').value);
+    let height = parseFloat(document.getElementById('height').value);
+
+    if (isNaN(weight) || isNaN(height)) {
+        document.getElementById('result').innerText = 'Please enter valid numbers for weight and height.';
+        return;
+    }
+
+    let bmi = calculateBMI(weight, height);
+    let classification = classifyBMI(bmi);
+
+    document.getElementById('result').innerText = `Your BMI is: ${bmi} (${classification})`;
+});
+
+function calculateBMI(weight, height) {
+    let bmi = weight / (height * height);
+    return bmi.toFixed(2);
+}
+
+function classifyBMI(bmi) {
+    if (bmi < 18.5) {
+        return "You are Underweight";
+    } else if (bmi >= 18.5 && bmi < 24.9) {
+        return "You have a Healthy weight";
+    } else if (bmi >= 25 && bmi < 29.9) {
+        return "Overweight";
+    } else {
+        return "Obese";
+    }
+}
+</script>
+<style>
+    *{
+    padding: 0px;
+    margin: 0px;
+}
+    body{
+        background: url("bg.jpg");
+    }
+    .bmi{
+        margin-top: 20vh;
+        text-align: center;
+        
+    }
+    h1{
+        color: white;
+    }
+    input{
+        font-size: 20px;
+        border: none;
+        padding: 20px;
+        background-color: transparent;
+        color: white;
+    }
+    input:hover{
+        text-decoration: underline;
+    }
+    input::placeholder{
+        color: white;
+        text-align: center;
+        background-color: inherit;
+    }
+    #results{
+        width: 50px;
+    }
+    .header a{
+    text-decoration: none;
+    color: white;
+}
+.header img{
+    width: 65px;
+    border-radius: 100%;
+}
+.header{
+    background-color: rgb(43, 20, 20);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+#result{
+    padding: 20px;
+    width: 200px;
+    font-size: 20px;
+}
+#calculate{
+    padding: 10px;
+    font-size: 20px;
+}
+</style>
